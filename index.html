@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Aaradhya ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:#f6e5c4;
+    color:#5b351f;
+    font-family:Georgia, "Times New Roman", serif;
+    overflow-x:hidden;
+}
+
+.book{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    padding:20px 12px 40px;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.header h1{
+    font-size:clamp(32px,8vw,55px);
+    color:#8b2f1d;
+    line-height:1.15;
+    text-shadow:2px 2px 3px rgba(80,40,10,.15);
+}
+
+.header p{
+    margin-top:10px;
+    font-size:20px;
+    line-height:1.5;
+    color:#70452d;
+}
+
+/* MEMORY CARD */
+
+.memory-card{
+    background:#f7dfae;
+    border:8px solid #bd8439;
+    border-radius:35px;
+    overflow:hidden;
+    box-shadow:
+        0 8px 0 #956124,
+        0 15px 30px rgba(70,35,10,.25);
+}
+
+/* PHOTO */
+
+.photo-area{
+    padding:18px;
+    background:#fff5df;
+    border-bottom:3px solid #c89954;
+}
+
+.photo-frame{
+    position:relative;
+    padding:8px;
+    background:white;
+    border:3px solid #a76c32;
+    box-shadow:0 5px 14px rgba(70,40,10,.2);
+}
+
+#memoryPhoto{
+    display:block;
+    width:100%;
+    height:430px;
+    object-fit:cover;
+    background:#ead5ad;
+}
+
+/* FLOWERS */
+
+.flower{
+    position:absolute;
+    z-index:5;
+    font-size:32px;
+}
+
+.top-left{
+    top:4px;
+    left:5px;
+}
+
+.top-right{
+    top:4px;
+    right:5px;
+}
+
+/* NOTE */
+
+.note{
+    padding:22px 30px 28px;
+
+    background:
+    repeating-linear-gradient(
+        to bottom,
+        #f7dfae 0px,
+        #f7dfae 49px,
+        rgba(120,75,35,.15) 50px,
+        #f7dfae 51px
+    );
+}
+
+.memory-number{
+    font-size:16px;
+    letter-spacing:4px;
+    color:#93603b;
+    margin-bottom:12px;
+}
+
+.memory-title{
+    font-size:clamp(27px,7vw,40px);
+    color:#8b2f1d;
+    margin-bottom:15px;
+    line-height:1.2;
+}
+
+.memory-text{
+    font-size:clamp(18px,4.7vw,24px);
+    line-height:1.65;
+    color:#54341f;
+}
+
+.signature{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#8b351f;
+}
+
+/* COUNTER */
+
+.counter{
+    text-align:center;
+    margin:22px 0 12px;
+    font-size:18px;
+    font-weight:bold;
+    color:#75462b;
+}
+
+/* DOTS */
+
+.dots{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:7px;
+    margin-bottom:20px;
+}
+
+.dot{
+    width:9px;
+    height:9px;
+    background:#c59a61;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.dot.active{
+    background:#8b351f;
+    transform:scale(1.5);
+}
+
+/* BUTTONS */
+
+.navigation{
+    display:flex;
+    gap:15px;
+    width:100%;
+}
+
+.navigation button{
+    flex:1;
+    border:0;
+    border-radius:30px;
+    padding:15px 10px;
+    background:#8b351f;
+    color:white;
+    font-family:Georgia,serif;
+    font-size:17px;
+    font-weight:bold;
+    box-shadow:
+        0 5px 0 #602414,
+        0 8px 15px rgba(70,30,10,.2);
+    cursor:pointer;
+}
+
+.navigation button:active{
+    transform:translateY(4px);
+    box-shadow:0 1px 0 #602414;
+}
+
+.navigation button:disabled{
+    opacity:.4;
+    cursor:not-allowed;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    margin-top:25px;
+    font-size:17px;
+    line-height:1.6;
+    color:#805034;
+}
+
+.footer span{
+    color:#d32f2f;
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+    .book{
+        padding:15px 9px 30px;
+    }
+
+    .photo-area{
+        padding:13px;
+    }
+
+    #memoryPhoto{
+        height:390px;
+    }
+
+    .note{
+        padding:20px 23px 25px;
+    }
+
+    .memory-text{
+        line-height:1.55;
+    }
+
+    .navigation button{
+        font-size:15px;
+    }
+}
+
+@media(max-width:360px){
+
+    #memoryPhoto{
+        height:330px;
+    }
+
+    .note{
+        padding-left:18px;
+        padding-right:18px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="book">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>
+            ❤️ For Aaradhya ❤️
+        </h1>
+
+        <p>
+            20 little memories from your brother<br>
+            <strong>Priyanshu</strong>
+        </p>
+
+    </div>
+
+
+    <!-- MEMORY CARD -->
+
+    <div class="memory-card">
+
+        <!-- PHOTO -->
+
+        <div class="photo-area">
+
+            <div class="photo-frame">
+
+                <div class="flower top-left">🌸</div>
+                <div class="flower top-right">🌺</div>
+
+                <!-- ONLY ONE PHOTO -->
+                <img
+                    id="memoryPhoto"
+                    src="IMG_20260828_131504_516.jpg"
+                    alt="Memory Photo"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- NOTE -->
+
+        <div class="note">
+
+            <div
+                class="memory-number"
+                id="memoryNumber">
+                MEMORY 01
+            </div>
+
+            <h2
+                class="memory-title"
+                id="memoryTitle">
+                The Beginning ❤️
+            </h2>
+
+            <p
+                class="memory-text"
+                id="memoryText">
+                Every beautiful collection of memories has a beginning.
+                Looking at this picture reminds me how lucky I am to have
+                a sister like you. Some moments become special simply
+                because we experienced them together.
+            </p>
+
+            <div class="signature">
+                ✨ Priyanshu ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COUNTER -->
+
+    <div class="counter">
+
+        Memory
+        <span id="currentNumber">1</span>
+        of
+        <span id="totalNumber">20</span>
+
+    </div>
+
+
+    <!-- DOTS -->
+
+    <div
+        class="dots"
+        id="dots">
+    </div>
+
+
+    <!-- BUTTONS -->
+
+    <div class="navigation">
+
+        <button
+            id="previousButton"
+            onclick="previousPage()">
+            ⬅️ Previous
+        </button>
+
+        <button
+            id="nextButton"
+            onclick="nextPage()">
+            Next ➡️
+        </button>
+
+    </div>
+
+
+    <div class="footer">
+
+        Made especially for Aaradhya
+        <span>❤️</span>
+        <br>
+
+        With love from Priyanshu ✨
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================================
+   YOUR EXACT PHOTO NAMES
+   ========================================= */
+
+const photos = [
+
+    "IMG_20260828_131504_516.jpg",
+
+    "IMG_20260828_131505_189.jpg",
+
+    "IMG_20260828_131506_718.jpg",
+
+    "IMG_20260828_131524_742.jpg",
+
+    "IMG_20260828_131543_698.jpg",
+
+    "IMG_20260828_131545_080.jpg",
+
+    "IMG_20260828_131546_496.jpg",
+
+    "IMG_20260828_131548_013.jpg",
+
+    "IMG_20260828_131658_611.jpg",
+
+    "IMG_20260828_131701_927.jpg",
+
+    "IMG_20260828_131704_059.jpg",
+
+    "IMG_20260828_131705_592.jpg",
+
+    "IMG_20260828_131707_127.jpg",
+
+    "IMG_20260828_131709_094.jpg",
+
+    "IMG_20260828_131718_948.jpg",
+
+    "IMG_20260828_131720_265.jpg",
+
+    "IMG_20260828_131721_933.jpg",
+
+    "IMG_20260828_131723_182.jpg",
+
+    "IMG_20260828_131725_122.jpg",
+
+    "IMG_20260828_131726_319.jpg"
+
+];
+
+
+/* =========================================
+   MEMORY TITLES
+   ========================================= */
+
+const titles = [
+
+    "The Beginning ❤️",
+
+    "My Favourite Person ❤️",
+
+    "Always There 🫶",
+
+    "Little Moments ✨",
+
+    "Endless Laughs 😂❤️",
+
+    "Partners In Crime 😎",
+
+    "Your Smile 😊",
+
+    "Crazy Memories 😂",
+
+    "A Special Bond 💕",
+
+    "Halfway There ❤️",
+
+    "Forever Family 🏡",
+
+    "Thank You 🫶",
+
+    "Beautiful Memories ✨",
+
+    "Always Special ❤️",
+
+    "Through Everything 🤝",
+
+    "One Of A Kind 🌷",
+
+    "Keep Smiling 😊❤️",
+
+    "More To Come ✨",
+
+    "Almost At The End ❤️",
+
+    "To My Amazing Sister ❤️"
+
+];
+
+
+/* =========================================
+   MEMORY NOTES
+   ========================================= */
+
+const notes = [
+
+    `Every beautiful collection of memories has a beginning.
+    Looking at this picture reminds me how lucky I am to have
+    a sister like you. Some moments become special simply
+    because we experienced them together.`,
+
+    `Having you as my sister is one of those blessings that
+    I can never properly explain. You have been part of so
+    many little moments that turned into unforgettable
+    memories.`,
+
+    `Life keeps changing, but some people remain special no
+    matter what. You are one of those people for me.
+    Thank you for being a part of my life and my memories.`,
+
+    `Sometimes the smallest moments become the memories we
+    remember the longest. A simple smile, a silly moment,
+    or just being together can mean everything.`,
+
+    `Some memories are impossible to explain without laughing.
+    Thank you for all the random conversations, funny
+    moments and unforgettable laughs.`,
+
+    `Every family needs two people who can turn an ordinary
+    day into a story. Somehow, we have managed to create
+    plenty of those stories together.`,
+
+    `There are some smiles that make an ordinary moment feel
+    special. Yours has a way of making memories brighter
+    without even trying.`,
+
+    `Looking back at our memories makes me realise how many
+    crazy, funny and completely random moments we have
+    collected along the way.`,
+
+    `A brother and sister may argue about the smallest things,
+    but underneath all those arguments is a bond that stays
+    strong. I will always treasure ours.`,
+
+    `Ten memories down, but there are still countless moments
+    waiting to be remembered. Every picture carries a little
+    piece of our story.`,
+
+    `No matter how much life changes, family will always be
+    home. I am grateful that my home includes a sister like
+    you.`,
+
+    `Thank you for all the little things you do, even the
+    things that may seem ordinary. They are part of what
+    makes having you as my sister so special.`,
+
+    `Pictures may capture a moment, but the feelings behind
+    them are what make them priceless. This is one memory
+    I will always keep close.`,
+
+    `Some people are simply irreplaceable. No matter how many
+    years pass or how much things change, you will always
+    have a special place in my life.`,
+
+    `Through good days, boring days, funny days and difficult
+    days, having someone from your own family beside you is
+    something truly special.`,
+
+    `There is only one Aaradhya, and that is more than enough
+    to make our family a little more fun, a little more
+    chaotic and a lot more memorable.`,
+
+    `Keep smiling, keep being yourself and keep creating
+    memories. The best chapters of our story are still
+    waiting to be written.`,
+
+    `Twenty pictures can never contain all our memories.
+    There will always be more laughs, more pictures and more
+    stories waiting for us.`,
+
+    `We may be near the end of this little memory book, but
+    this isn't the end of our story. There are so many more
+    memories waiting ahead.`,
+
+    `Aaradhya, these pictures are only a tiny collection of
+    the memories we share. I hope whenever you look through
+    this little book, you smile and remember how special
+    you are to me. Happy Raksha Bandhan! ❤️`
+
+];
+
+
+/* =========================================
+   ELEMENTS
+   ========================================= */
+
+const photo =
+    document.getElementById("memoryPhoto");
+
+const memoryNumber =
+    document.getElementById("memoryNumber");
+
+const memoryTitle =
+    document.getElementById("memoryTitle");
+
+const memoryText =
+    document.getElementById("memoryText");
+
+const currentNumber =
+    document.getElementById("currentNumber");
+
+const totalNumber =
+    document.getElementById("totalNumber");
+
+const previousButton =
+    document.getElementById("previousButton");
+
+const nextButton =
+    document.getElementById("nextButton");
+
+const dotsContainer =
+    document.getElementById("dots");
+
+
+/* =========================================
+   CURRENT PAGE
+   ========================================= */
+
+let currentPage = 0;
+
+totalNumber.textContent = photos.length;
+
+
+/* =========================================
+   CREATE DOTS
+   ========================================= */
+
+for(let i = 0; i < photos.length; i++){
+
+    const dot =
+        document.createElement("div");
+
+    dot.className = "dot";
+
+    dot.onclick = function(){
+
+        currentPage = i;
+
+        updatePage();
+
+    };
+
+    dotsContainer.appendChild(dot);
+}
+
+const dots =
+    document.querySelectorAll(".dot");
+
+
+/* =========================================
+   UPDATE EVERYTHING
+   ========================================= */
+
+function updatePage(){
+
+    /* CHANGE PHOTO */
+
+    photo.src = photos[currentPage];
+
+
+    /* CHANGE NUMBER */
+
+    currentNumber.textContent =
+        currentPage + 1;
+
+    memoryNumber.textContent =
+        "MEMORY " +
+        String(currentPage + 1).padStart(2,"0");
+
+
+    /* CHANGE TITLE */
+
+    memoryTitle.textContent =
+        titles[currentPage];
+
+
+    /* CHANGE NOTE */
+
+    memoryText.textContent =
+        notes[currentPage];
+
+
+    /* CHANGE DOT */
+
+    dots.forEach(function(dot,index){
+
+        dot.classList.toggle(
+            "active",
+            index === currentPage
+        );
+
+    });
+
+
+    /* BUTTON STATE */
+
+    previousButton.disabled =
+        currentPage === 0;
+
+    nextButton.disabled =
+        currentPage === photos.length - 1;
+
+
+    /* GO TO TOP */
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+
+/* =========================================
+   NEXT
+   ========================================= */
+
+function nextPage(){
+
+    if(currentPage < photos.length - 1){
+
+        currentPage++;
+
+        updatePage();
+
+    }
+
+}
+
+
+/* =========================================
+   PREVIOUS
+   ========================================= */
+
+function previousPage(){
+
+    if(currentPage > 0){
+
+        currentPage--;
+
+        updatePage();
+
+    }
+
+}
+
+
+/* =========================================
+   SWIPE ON PHONE
+   ========================================= */
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+
+document.addEventListener(
+    "touchstart",
+    function(event){
+
+        touchStartX =
+            event.changedTouches[0].screenX;
+
+    },
+    {passive:true}
+);
+
+
+document.addEventListener(
+    "touchend",
+    function(event){
+
+        touchEndX =
+            event.changedTouches[0].screenX;
+
+        const distance =
+            touchStartX - touchEndX;
+
+
+        if(distance > 60){
+
+            nextPage();
+
+        }
+
+
+        if(distance < -60){
+
+            previousPage();
+
+        }
+
+    },
+    {passive:true}
+);
+
+
+/* =========================================
+   KEYBOARD
+   ========================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "ArrowRight"){
+
+            nextPage();
+
+        }
+
+        if(event.key === "ArrowLeft"){
+
+            previousPage();
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   START
+   ========================================= */
+
+updatePage();
+
+</script>
+
+</body>
+</html>
